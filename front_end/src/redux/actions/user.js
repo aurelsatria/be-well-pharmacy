@@ -83,7 +83,7 @@ export const onBtnLogin = ({ username, password }) => {
           if (res.data.dataLogin) {
             alert("Login Succes");
             console.log("Login Success ✔");
-            console.log(res.data);
+            // console.log(res.data);
             localStorage.setItem(
               "userDataEmmerce",
               JSON.stringify(res.data.dataLogin)

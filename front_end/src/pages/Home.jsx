@@ -20,9 +20,9 @@ class Home extends React.Component {
     this.getData()
   }
 
-  // componentDidUpdate() {
-  //   this.getData()
-  // }
+  componentDidUpdate() {
+    this.getData()
+  }
 
   // componentDidUpdate(prevProps, prevState) {
   //   // only update if searchValue has changed
@@ -50,13 +50,13 @@ class Home extends React.Component {
 
   nextPageHandler = () =>{
     this.setState({ page : this.state.page + 1, limitPage : this.state.limitPage + 4 });
-    this.getData()
+    // this.getData()
     // () => this.getData(e)
   }
 
   prevPageHandler = () =>{
     this.setState({ page : this.state.page - 1, limitPage : this.state.limitPage - 4 });
-    this.getData()
+    // this.getData()
     // () => this.getData(e)
   }
 
